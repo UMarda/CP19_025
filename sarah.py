@@ -1,7 +1,7 @@
-r=int(input("range:"))
+a=int(input("range:"))
 positive=0
 negative=0
-for i in range(r):
+for i in range(a):
   y=input()
   if(y=="x"):
     print("the end")
