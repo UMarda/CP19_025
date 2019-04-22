@@ -12,5 +12,5 @@ for i in range(a):
       negative+=1
     elif(z>=0):
       positive+=1
-print("total positive numbers:",positive,"\nTotal negative numbers:",negative)
+print("total positive numbers: ",positive,"\nTotal negative numbers: ",negative)
     
