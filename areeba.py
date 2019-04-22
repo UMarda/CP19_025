@@ -1,7 +1,7 @@
-#TRIANGLE
+#TRIANGLESHAPE
 i=1
-while(i<7):
-    j=7
+while(i<8):
+    j=8
     while(j>i+1):
         print(" ",end=" ")
         j=j-1
