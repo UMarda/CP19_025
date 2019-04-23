@@ -1,8 +1,8 @@
 #money counting games
-p=float(input("enter the number of pennies= "))
-n=float(input("enter the number of nickels= "))
-d=float(input("enter the number of dimes= "))
-q=float(input("enter the number of quarters= "))
+p=float(input("Enter the number of pennies= "))
+n=float(input("Enter the number of nickels= "))
+d=float(input("Enter the number of dimes= "))
+q=float(input("Enter the number of quarters= "))
 sum=p+n+d+q
 if(sum==1):
     print("Congratulations! you win")
