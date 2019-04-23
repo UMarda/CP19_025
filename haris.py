@@ -1,9 +1,8 @@
-import pyttsx3
-s=input("Enter words to speak:")
-c=s.lower()
-while(c!="exit"):
-    engine=pyttsx3.init()
-    engine.say(s)
-    engine.runAndWait()
-    s=input("Enter word to speak or press s to exit:")
-    c=s.lower()
+s1=input("Enter a sentence:")
+s2=input("Enter a sentence:")
+se1=s1.split(" ")
+se2=s2.split(" ")
+for i in se1:
+    for j in se2:
+        if i==j:
+            print(i)
