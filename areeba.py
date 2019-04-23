@@ -1,4 +1,4 @@
-#TRIANGLESHAPE
+#SHAPEOFTRIANGLE
 i=1
 while(i<8):
     j=8
