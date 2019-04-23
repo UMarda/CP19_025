@@ -13,6 +13,8 @@ while True:
 
         elif (value < 0 and value > -35):
             negative+=1
+        else:
+            print("You did not enter the Correct Integer ")
 
 print("Total Positive Numbers=",positive)
 print("Total Negative Numbers=",negative)
