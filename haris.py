@@ -1,8 +1,12 @@
-s1=input("Enter a sentence:")
-s2=input("Enter a sentence:")
-se1=s1.split(" ")
-se2=s2.split(" ")
-for i in se1:
-    for j in se2:
-        if i==j:
-            print(i)
+num=int(input("Enter No : "))
+def fibo(a,b):
+    c=0
+    print("0","1",end=' ')
+    for i in range(1,num-2):
+        c=a+b
+        a=b
+        b=c
+        print(c,end=' ')
+        c=a+b
+    return c
+print(fibo(0,1))
