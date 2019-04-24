@@ -15,7 +15,9 @@ while True:
             negative+=1
         else:
             print("You did not enter the Correct Integer ")
+print("The End")
 
 print("Total Positive Numbers=",positive)
 print("Total Negative Numbers=",negative)
-print("The End")
+
+
