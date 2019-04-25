@@ -1,23 +1,12 @@
-positive=0
-negative=0
-while True:
-    value=input("Enter an integer from -35 to 35: ")
-   
-    if (value=="x"):
-        break
-    else:
-        value=int(value)
+# Number Analyser 
 
-        if (value>0 and value<35):
-            positive+=1
+N=int(input("Please Enter a Number: "))
 
-        elif (value < 0 and value > -35):
-            negative+=1
-        else:
-            print("You did not enter the Correct Integer ")
-print("The End")
-
-print("Total Positive Numbers=",positive)
-print("Total Negative Numbers=",negative)
-
-
+if(N>0):
+  print("Positive Number")
+  if(N%2==0):
+    print("Even")
+  else:
+    print("Odd")
+else:
+  print("Negative Number")
