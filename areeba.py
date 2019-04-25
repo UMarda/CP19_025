@@ -1,3 +1,4 @@
+#shape
 l=1
 while(l<7):
     m=1
