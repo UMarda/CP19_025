@@ -1,5 +1,5 @@
 import math
-num=input("Enter a number: ")
+num=input("Enter a number:")
 while True:
     if num=="x":
         break
@@ -10,5 +10,5 @@ while True:
             print("the num ",num,"is a perfect square of ",sr)
         elif num!=sr**2:
             print("the num ",num,"is not a perfect square ")
-    num=(input("Enter a number="))
+    num=(input("Enter a number: "))
     
