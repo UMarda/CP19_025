@@ -1,12 +1,13 @@
-num=int(input("Enter No : "))
-def fibo(a,b):
-    c=0
-    print("0","1",end=' ')
-    for i in range(1,num-2):
-        c=a+b
-        a=b
-        b=c
-        print(c,end=' ')
-        c=a+b
-    return c
-print(fibo(0,1))
+import datetime
+d=input("Enter:")
+r=d.split("/")
+date=datetime.datetime.now()
+e=int(r[0])
+f=int(r[1])
+g=int(r[2])
+if e>date.day or f>date.month or g>date.year:
+    print("Greater")
+elif e<date.day or f<date.month or g<date.year: 
+    print("Lesser")
+else:
+    print("Equal")
