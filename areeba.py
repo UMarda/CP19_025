@@ -1,9 +1,8 @@
-#MAGICDATE
-month=int(input("enter month="))
-day=int(input("enter day="))
-year=int(input("enter year"))
-magic=month*day
-if(magic==year):
-    print("the date is magic")
-else:
-    print("error")
+l=1
+while(l<7):
+    m=1
+    while(m<l+l):
+        print("*",end=" ")
+        m=m+1
+    l=l+1
+    print(" ")
