@@ -1,11 +1,12 @@
-n=input("Enter a string:")
-a=n.split(",")
-maxx=0
-minn=99999999
-for k in a:
-    if int(k)>maxx:
-        maxx=int(k)
-    if int(k)<minn:
-        minn=int(k)
-print("Maximum value in this list is",maxx)
-print("Minimum value in this list is",minn)
+d=input("Enter a paragraph:")
+v=""
+d_c=True
+for j in d:
+    if j==".":
+        d_c=True
+    if j.isalpha() and d_c:
+        v+=j.upper()
+        d_c=False
+    else:
+        v+=j
+print(v)        
