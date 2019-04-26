@@ -1,10 +1,8 @@
-def triangle():
-  x=int(input("Enter number:"))
-  for i in range(1,6):
-    for j in range(i,7-1):
-        print(" ",end=" ")
-    for k in range(1,1*i):
-        print("5 9",end=" ")
-    print("5")
-triangle()
-  
+s1=input("Enter a sentence:")
+s2=input("Enter a sentence:")
+se1=s1.split(" ")
+se2=s2.split(" ")
+for i in se1:
+    for j in se2:
+        if i==j:
+            print(i)
