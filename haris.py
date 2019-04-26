@@ -1,8 +1,11 @@
-def main(mass,velocity):
-  ke=0.5*(mass*(velocity**2))
-  return(ke)
-
-mass=int(input("Enter the value for mass:"))
-velocity=int(input("Enter the value for velocity:"))
-print(main(mass,velocity))
-  
+n=input("Enter a string:")
+a=n.split(",")
+maxx=0
+minn=99999999
+for k in a:
+    if int(k)>maxx:
+        maxx=int(k)
+    if int(k)<minn:
+        minn=int(k)
+print("Maximum value in this list is",maxx)
+print("Minimum value in this list is",minn)
