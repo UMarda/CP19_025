@@ -1,12 +1,8 @@
-d=input("Enter a paragraph:")
-v=""
-d_c=True
-for j in d:
-    if j==".":
-        d_c=True
-    if j.isalpha() and d_c:
-        v+=j.upper()
-        d_c=False
-    else:
-        v+=j
-print(v)        
+def main(mass,velocity):
+  ke=0.5*(mass*(velocity**2))
+  return(ke)
+
+mass=int(input("Enter the value for mass:"))
+velocity=int(input("Enter the value for velocity:"))
+print(main(mass,velocity))
+  
