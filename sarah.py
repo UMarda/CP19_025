@@ -1,4 +1,4 @@
-##task ###
+####task ###
 import math
 num=input("Enter a number: ")
 while True:
@@ -10,6 +10,6 @@ while True:
         if num==sr**2:
             print("The num ",num,"is a perfect square of ",sr)
         elif num!=sr**2:
-            print("The num ",num,"is not a perfect square ")
+            print("The num ",num,"is not a perfect square. ")
     num=(input("Enter a number: "))
-    
+    #######
