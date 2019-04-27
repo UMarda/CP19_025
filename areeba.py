@@ -1,4 +1,3 @@
-
 #shapes...
 l=1
 while(l<7):
@@ -7,4 +6,5 @@ while(l<7):
         print("*",end=" ")
         m=m+1
     l=l+1
+    
     print(" ")
