@@ -1,8 +1,11 @@
-s1=input("Enter a sentence:")
-s2=input("Enter a sentence:")
-se1=s1.split(" ")
-se2=s2.split(" ")
-for i in se1:
-    for j in se2:
-        if i==j:
-            print(i)
+n=input("Enter a string:")
+a=n.split(",")
+maxx=0
+minn=99999999
+for k in a:
+    if int(k)>maxx:
+        maxx=int(k)
+    if int(k)<minn:
+        minn=int(k)
+print("Maximum value in this list is",maxx)
+print("Minimum value in this list is",minn)
