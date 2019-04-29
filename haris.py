@@ -1,13 +1,8 @@
-import datetime
-d=input("Enter:")
-r=d.split("/")
-date=datetime.datetime.now()
-e=int(r[0])
-f=int(r[1])
-g=int(r[2])
-if e>date.day or f>date.month or g>date.year:
-    print("Greater")
-elif e<date.day or f<date.month or g<date.year: 
-    print("Lesser")
-else:
-    print("Equal")
+s1=input("Enter a sentence:")
+s2=input("Enter a sentence:")
+se1=s1.split(" ")
+se2=s2.split(" ")
+for i in se1:
+    for j in se2:
+        if i==j:
+            print(i)
