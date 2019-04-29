@@ -9,3 +9,4 @@ with sr.Microphones() as source :
         print('you said \n',+r.reconize_google(audio))
     except:
         print("sorry could not recognize your voice ")
+############################################################
