@@ -1,18 +1,18 @@
-def prime(value):
-    if(value>0):
-        i=1
-        count=0
-        result=0
-        while(i<=value):
-            result=value%i
-            
-            if(result==0):
-                count+=1
-            i+=1
-        if(count==2):
-            print(value," is a Prime Number")
-        
-        else:
-            print(value," Is Not Prime Number")
-value=int(input("Enter A Number : "))
-prime(value)
+import tkinter
+from tkinter import *
+ 
+window = Tk()
+ 
+window.title("Welcome to LikeGeeks app")
+ 
+window.geometry('350x200')
+ 
+lbl = Label(window, text="Hello")
+ 
+lbl.grid(column=0, row=0)
+ 
+btn = Button(window, text="Click Me")
+ 
+btn.grid(column=1, row=0)
+ 
+window.mainloop()
