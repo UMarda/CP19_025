@@ -1,12 +1,12 @@
-import speech_recognition as sr     # import the library
-
-r = sr.Recognizer() # initialize recognizer
-
-with sr.Microphone() as source:     # mention source it will be either Microphone or audio files.
-    print("Speak Anything :")
-    audio = r.listen(source)        # listen to the source
+################## Speech to text Library ###################
+import speech_recognition as sr
+r = sr.Recognizer()     # Recognizer
+with sr.Microphones() as source :
+    print('speak anything')
+    audio=r.listen(source)        #variable
+    print("Time Over Thanks")
     try:
-        text = r.recognize_google(audio)    
-        print("You said : {}".format(text))
+        print('you said \n',+r.reconize_google(audio))
     except:
-        print("Sorry could not recognize your voice")   
+        print("sorry could not recognize your voice ")
+############################################################
