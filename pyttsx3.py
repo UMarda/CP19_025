@@ -11,7 +11,6 @@ while(y!="exit"):             #stop taking input
     engine.runAndWait()
     y=input("enter a sentence: ") #again taking sentence
 
-
 #for changing voices 
 import pyttsx3
 engine = pyttsx3.init()
@@ -28,4 +27,11 @@ voices = engine.getProperty('voices')
 for voice in voices:
    engine.setProperty('voice', voice.id)
    engine.say('The quick brown fox jumped over the lazy dog.')
+engine.runAndWait()
+
+#for changing speech rate
+engine = pyttsx3.init()
+rate = engine.getProperty('rate')
+engine.setProperty('rate', rate+50)
+engine.say('The quick brown fox jumped over the lazy dog.')
 engine.runAndWait()
