@@ -1,7 +1,7 @@
 ################## Speech to text Library ####################
 import speech_recognition as sr
 r = sr.Recognizer()     # Recognizer
-with sr.Microphones() as source :
+with sr.Microphones() as source :     #Microphone is work with the library of pyaudio
     print('speak anything')
     audio=r.listen(source)        #variable
     print("Time Over Thanks")
