@@ -1,4 +1,4 @@
-#inital text to speech coding
+#inital text to speech coding for two sentences
 import pyttsx3
 y=input("enter a sentence: ")  #input sentence 1
 z=input("enter a sentence: ")  #input sentence 2
@@ -9,7 +9,8 @@ while(y!="exit"):             #stop taking input
     engine.say(y)        #say sentence 1
     engine.say(z)        #say sentence 2
     engine.runAndWait()
-    y=input("enter a sentence: ") #again taking sentence
+    y=input("enter a sentence: ") #again taking sentence 
+#this will continue till you enter exit
 
 #for changing voices 
 import pyttsx3
@@ -35,3 +36,4 @@ rate = engine.getProperty('rate')
 engine.setProperty('rate', rate+50)
 engine.say('The quick brown fox jumped over the lazy dog.')
 engine.runAndWait()
+
