@@ -1,8 +1,8 @@
-s1=input("Enter a sentence:")
-s2=input("Enter a sentence:")
-se1=s1.split(" ")
-se2=s2.split(" ")
-for i in se1:
-    for j in se2:
-        if i==j:
-            print(i)
+a=input("Enter a word:")
+print(a[:])
+print(a[::-1])
+if(a==a[::-1]):
+    print("It is pallendrome")
+else:
+    print("It is not pallendrome")
+    
