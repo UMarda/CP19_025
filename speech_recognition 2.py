@@ -1,16 +1,10 @@
-import speech_recognition as sr  
+import speech_recognition as sr
+recording = sr.Recognizer()
 
-# get audio from the microphone                                                                       
-r = sr.Recognizer()                                                                                   
-with sr.Microphone() as source:   
-    
-    print("Speak:")                                                                                   
-    audio = r.listen(source)   
-
-try:
-    print("You said " + r.recognize_google(audio))
-
-except sr.UnknownValueError:
-    print("Could not understand your audio")
-except sr.RequestError as e:
-    print("Could not request results; {0}".format(e))
+with sr.Microphone() as source: recording.adjust_for_ambient_noise(source)
+    print("Please Say something:")
+    audio = recording.listen(source)
+    try:
+        print("You said: \n" + recording.recognize_google(audio))
+except Exception as e:
+        print(e)
