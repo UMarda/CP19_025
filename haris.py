@@ -1,18 +1,8 @@
-import tkinter
-from tkinter import *
- 
-window = Tk()
- 
-window.title("Welcome to LikeGeeks app")
- 
-window.geometry('350x200')
- 
-lbl = Label(window, text="Hello")
- 
-lbl.grid(column=0, row=0)
- 
-btn = Button(window, text="Click Me")
- 
-btn.grid(column=1, row=0)
- 
-window.mainloop()
+s1=input("Enter a sentence:")
+s2=input("Enter a sentence:")
+se1=s1.split(" ")
+se2=s2.split(" ")
+for i in se1:
+    for j in se2:
+        if i==j:
+            print(i)
