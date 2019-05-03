@@ -17,15 +17,15 @@ import pyttsx3
 engine = pyttsx3.init()
 voices = engine.getProperty('voices')
 for voice in voices:
-   engine.setProperty('voice', voice.id)
-   engine.say('The quick brown fox jumped over the lazy dog.')
+   engine.setProperty('voice', voice.id) #to set property of voice 
+   engine.say('The quick brown fox jumped over the lazy dog.') #sentence
 engine.runAndWait()
 
 #to input sentence for voice changing
 import pyttsx3
 engine = pyttsx3.init()
-voices = engine.getProperty('voices')
-for voice in voices:
+voices = engine.getProperty('voices') 
+for voice in voices:         #for voice 
    engine.setProperty('voice', voice.id)
    engine.say('The quick brown fox jumped over the lazy dog.')
 engine.runAndWait()
