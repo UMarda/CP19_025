@@ -1,0 +1,4 @@
+GUI in Tkinter
+Text to Speech in pyttsx3
+Speech to text in Speech_recognition and Pyaudio
+ 

@@ -1,0 +1,5 @@
+Umar Daraz : Work on Speech to Text libraries (Speech_recognition and pyaudio) 
+Areeba Abdul Rehman : Work on GUI library (Tkinter)  
+Sarah Patel : Work on Text to Speech Library(Pyttsx3)
+Haseeb Farrukh : Work on Speech to Text libraries (Speech_recognition and pyaudio)
+Haris Khan : Work on GUI library (Tkinter)
