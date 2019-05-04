@@ -12,4 +12,5 @@ root.geometry("640x480")
 b1=tk.Button(root,text="click",command=clickf,bg="blue")
 b1.pack()
 
+
 root.mainloop()
