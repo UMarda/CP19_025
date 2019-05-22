@@ -2,7 +2,7 @@
 import pyttsx3
 y=input("enter a sentence: ")  #input sentence 1
 z=input("enter a sentence: ")  #input sentence 2
-while(y!="exit"):             #stop taking input 
+while(y!="exit"):              #stop taking input 
     engine = pyttsx3.init()
     engine.setProperty('rate', 150)    
     engine.setProperty('volume', 0.9) 
@@ -17,15 +17,15 @@ import pyttsx3
 engine = pyttsx3.init()
 voices = engine.getProperty('voices')
 for voice in voices:
-   engine.setProperty('voice', voice.id) #to set property of voice 
-   engine.say('The quick brown fox jumped over the lazy dog.') #sentence
+   engine.setProperty('voice', voice.id)     #to set property of voice 
+   engine.say('The quick brown fox jumped over the lazy dog.')   #sentence
 engine.runAndWait()
 
 #to input sentence for voice changing
 import pyttsx3
 engine = pyttsx3.init()
 voices = engine.getProperty('voices') 
-for voice in voices:         #for voice 
+for voice in voices:                #for voice 
    engine.setProperty('voice', voice.id)
    engine.say('The quick brown fox jumped over the lazy dog.')
 engine.runAndWait()
@@ -36,4 +36,5 @@ rate = engine.getProperty('rate')
 engine.setProperty('rate', rate+50)
 engine.say('The quick brown fox jumped over the lazy dog.')
 engine.runAndWait()
+
 
